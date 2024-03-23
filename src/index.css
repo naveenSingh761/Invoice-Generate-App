@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Dancing+Script:wght@400..700&family=Eczar:wght@400..800&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  /* 
+  body::-webkit-scrollbar {
+    width: 2px;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #fccece;
+  }
+  body::-webkit-scrollbar-track {
+    background-color: rgb(254, 152, 0);
+  } */
+  .bd {
+    border: 1px solid #000;
+  }
+
+  .mytextstyle {
+    background-image: linear-gradient(100deg, #04fbff 0%, #fc00ff 100%);
+  }
+
+  .myflex {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .myborder {
+    @apply border-b-[0.2rem] border-b-lime-200;
+    @apply border-t-[1vmax] border-t-lime-400;
+    @apply border-l-[0.1rem] border-l-fuchsia-600;
+    @apply border-r-[0.3rem] border-r-cyan-500;
+  }
+
+  @keyframes techStackAnimation {
+    0% {
+      transform: translateX(0%);
+    }
+    25% {
+      transform: translateX(-50%);
+    }
+    50% {
+      transform: translateX(0%);
+    }
+    75% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  .floatAnimation {
+    display: inline-block;
+    /* transition: transform s; */
+    animation: floating 5s infinite;
+  }
+
+  @keyframes floating {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    25% {
+      transform: translate(-10%, -15%);
+    }
+    50% {
+      transform: translate(10%, -15%);
+    }
+  }
+}
