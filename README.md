@@ -6,11 +6,13 @@
 To Start the Project
 <ol>
     <li>
-     cd BlogSite
+     Clone the Repo 
+    </li>
+    <li>
+     cd venture
     </li>
     <li>
         npm run dev
-
     </li>
 </ol>
 
