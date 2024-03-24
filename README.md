@@ -6,10 +6,11 @@
 To Start the Project
 <ol>
     <li>
-     Clone the Repo 
+     Clone the Repo using command 
+      <i>git clone https://github.com/naveenSingh761/venture-Assement.git</i>
     </li>
     <li>
-     cd venture
+     cd venture-Assement
     </li>
     <li>
         npm run dev
