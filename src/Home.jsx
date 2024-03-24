@@ -31,14 +31,10 @@ const Home = () => {
     }
   }, []);
 
-  useEffect(() => {
-    console.log(favoriteItem);
-  }, [favoriteItem.favProduct]);
-
   return (
     <>
       <Header />
-      <ProductCard data={data} />
+      {data.length !== 0 && <ProductCard data={data} setData={setData} />}
     </>
   );
 };
